@@ -28,7 +28,7 @@ function gotHTML(err, resp, html) {
 					let spots = elem.text();
 					let msg = coursename + " has " + spots + " spots";
 					console.log(msg);
-					if (spots != 0) {
+					if (spots > 0) {
 						client.messages.create({
 							body: msg,
 							to: recipient_phone_number,
